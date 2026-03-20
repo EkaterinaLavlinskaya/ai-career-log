@@ -4,5 +4,6 @@
 import pandas as pd
 
 logs = pd.read_json("interaction_log.jsonl", lines=True)
-print(f"Всего взаимодействий: {len(logs)}")
-print(f"Темы: {logs['query'].str.contains('проект').sum()} про проекты")
+print(f"Всего записей: {len(logs)}")
+print(f"Темы: {logs['topic'].value_counts()}")
+print(f"Проекты в первой записи: {logs.iloc[0]['projects']}")
