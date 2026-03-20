@@ -111,6 +111,10 @@ if __name__ == "__main__":
     elif command == "day":
         log_interaction("daily", "очередной день", {"days_continuous": 1})
     elif command == "positive":
+    elif command == "interview":
+    log_interaction("interview", note, {"interviews": 1})
+    elif command == "offer":
+    log_interaction("offer", note, {"offers": 1})
         log_interaction("positive_response", note, {"positive_responses": 1})
     elif command == "custom":
         # Парсим дополнительные аргументы вида --inc projects=1 applications=1
