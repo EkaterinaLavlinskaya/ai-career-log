@@ -29,26 +29,3 @@ README переписано	3 проекта
 
 связь между обучением и результатами
 
-{
-  "timestamp": "2026-03-20",
-  "session_id": "001",
-  "query_topic": "статистика использования ИИ",
-  "query_text": "какой процент использует ИИ для карьеры?",
-  "response_summary": "менее 0.1%",
-  "user_state": {
-    "projects": 9,
-    "certificates": 10,
-    "continuous_days": 42,
-    "applications": 7,
-    "positive_responses": 3,
-    "tests": 1
-  },
-  "action_taken": "анализ, запрос на визуализацию",
-  "next_step": "создание датасета"
-}
-
-import pandas as pd
-
-logs = pd.read_json("interaction_log.jsonl", lines=True)
-print(f"Всего взаимодействий: {len(logs)}")
-print(f"Темы: {logs['query'].str.contains('проект').sum()} про проекты")
