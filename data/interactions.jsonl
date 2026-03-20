@@ -6,3 +6,4 @@
 {"timestamp": "2026-03-20 06:40", "session_id": 1, "topic": "проверка_скрипта", "projects": 9, "certificates": 10, "days_continuous": 42, "applications": 7, "positive_responses": 3, "tests": 1, "note": "Проверяем, как работает автоматическое добавление записей"}
 {"timestamp": "2026-03-20 07:23", "session_id": 1, "topic": "проверка_скрипта", "projects": 9, "certificates": 10, "days_continuous": 42, "applications": 7, "positive_responses": 3, "tests": 1, "note": "Проверяем, как работает автоматическое добавление записей"}
 {"timestamp": "2026-03-20 07:31", "session_id": 1, "topic": "application", "projects": 9, "certificates": 10, "days_continuous": 42, "applications": 7, "tests": 1, "interviews": 0, "offers": 0, "note": ""}
+{"timestamp": "2026-03-20 07:31", "session_id": 1, "topic": "rejection", "projects": 9, "certificates": 10, "days_continuous": 42, "applications": 7, "tests": 1, "interviews": 0.0, "offers": 0.0, "note": ""}
