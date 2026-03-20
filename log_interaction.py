@@ -6,17 +6,17 @@ import sys
 LOG_FILE = "data/interactions.jsonl"
 
 def get_last_state():
-    """Читает последнюю запись из лога и возвращает её счётчики"""
     if not os.path.exists(LOG_FILE):
-        # Если файла нет — начальные значения
         return {
             "projects": 0,
             "certificates": 0,
             "days_continuous": 0,
             "applications": 0,
-            "positive_responses": 0,
-            "tests": 0
+            "tests": 0,
+            "interviews": 0,        
+            "offers": 0               
         }
+
     
     with open(LOG_FILE, "r", encoding="utf-8") as f:
         lines = f.readlines()
